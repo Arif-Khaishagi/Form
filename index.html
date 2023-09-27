@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+    <meta
+      name="keywords"
+      content="Form"
+    />
+    <meta
+      name="description"
+      content="This document is an example of Form. "
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="./script.js"></script>
+  </head>
+
+  <body onload="document.registration.userid.focus();">
+    <h1>Registration Form</h1>
+    <form name="registration" onSubmit="return formValidation();">
+      <ul>
+        <li><label for="fname">First Name:</label></li>
+        <li><input type="text" name="fname" size="50" /></li>
+
+		<li><label for="lname">Last Name:</label></li>
+        <li><input type="text" name="lname" size="50" /></li>
+
+		<li><label for="dob">Date of Birth:</label></li>
+        <li><input type="date" name="dob" size="50" /></li>
+
+        <li><label for="address">Address:</label></li>
+        <li><input type="text" name="address" size="50" /></li>
+
+        <li><label for="country">Country:</label></li>
+        <li>
+          <select name="country">
+            <option selected="" value="Default">
+              (Please select a country)
+            </option>
+			<option value="">Select your country</option>
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+            <option value="India">India</option>
+            <option value="Russia">Russia</option>
+            <option value="USA">USA</option>
+			<option value="other">other</option>
+          </select>
+        </li>
+
+		  <li><label for="Profession">Profession:</label></li>
+        <li><input type="text" name="Profession" size="50" /></li>
+
+		<li><label for="email">Email:</label></li>
+        <li><input type="email" name="email" size="50" /></li>
+
+		<li><label for="mobile">Mobile Number:</label></li>
+        <li><input type="number" name="mobile" size="50" /></li>
+
+		<li><label id="gender">Gender:</label></li>
+        <li>
+          <input type="radio" name="msex" value="Male" /><span>Male</span>
+        </li>
+        <li>
+          <input type="radio" name="fsex" value="Female" /><span>Female</span>
+        </li>
+		<li>
+			<input type="radio" name="osex" value="Other" /><span>other</span>
+		  </li>
+		  
+    
+        <li><label for="desc">Review:</label></li>
+        <li><textarea name="desc" id="desc"></textarea></li>
+        <li><input type="submit" name="submit" value="Submit" /></li>
+		<li><input type="reset" name="reset" value="Reset" /></li>
+
+      </ul>
+    </form>
+  </body>
+</html>
